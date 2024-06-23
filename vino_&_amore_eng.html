@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Vino & Amore</title>
+    <style>
+        body {
+            font-family: "Cormorant Garamond", Georgia, serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .background-header-hero {
+            position: relative;
+            background: url('IMG_3941.PNG') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            height: 851px;
+        }
+        .background-header-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.75); /* Increased for better readability */
+            z-index: 1;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+        header.scrolled {
+            background-color: white;
+        }
+        header.scrolled nav a {
+            color: #333;
+        }
+        header.scrolled nav .separator {
+            color: #333;
+        }
+
+        /* Styles for main title */
+        .hero {
+            margin-top: 200px;
+        }
+        header h1, .hero h1, .hero p {
+            position: relative;
+            z-index: 3;
+        }
+
+        /* Styles for menu links */
+        nav {
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav a {
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0 15px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: white;
+        }
+        nav span.separator {
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0 15px;
+        }
+
+        /* Styles for div containers */
+        .container {
+            padding: 20px;
+            margin-top: 100px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-left: -300px; /* Adjusted for left alignment */
+            margin-right: 50px;
+        }
+
+        .content2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-left: 20px; /* Adjusted for left alignment */
+            margin-right: 50px;
+            margin-top: 300px; /* Slightly reduced for better alignment */
+        }
+
+        /* Styles for content inside divs */
+        .content div {
+            background-color: white;
+            color: black;
+            margin: 50px;
+            padding: 20px;
+            width: calc(50% - 100px); /* Calculation to include margins */
+        }
+
+        .satisfy-regular {
+            font-family: "Satisfy", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 30px;
+            color:#754909;
+        }
+
+        /* Styles for gold links without underlines */
+        a.gold-link {
+            color: #D4AF37;
+            text-decoration: none;
+        }
+
+        /* Styles for CALL button */
+        .call-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #754909;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .call-button:hover {
+            background-color: #5a3907;
+        }
+
+        /* Styles for footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Styles for Instagram image links */
+        .instagram-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center images horizontally */
+            margin-top: 20px;
+            width: 80%;
+            margin: 20px auto; /* Center container */
+        }
+
+        .instagram-links a {
+            margin: 5px; /* Reduce margin between images */
+            text-align: center;
+            display: block;
+            flex-basis: calc(25% - 10px); /* 4 images per row */
+        }
+
+        .instagram-links img {
+            width: 200px; /* Slightly increase image width */
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            display: block;
+            margin: auto;
+        }
+
+        .instagram-links img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1 style="color: #754909; font-family: Montserrat; font-size: 50px;">Vino & Amore</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="#chi_siamo">ABOUT US</a>
+            <a href="#contatti">INFO</a>
+            <a href="#prenota">BOOK</a>
+            <span class="separator">|</span>
+            <a href="trulli.html">TRULLI</a>
+        </nav>
+    </header>
+    <div class="background-header-hero">
+        <div class="hero">
+            <h1 style="font-size: 70px; font-weight: 700">"Wine adds a smile to friendship and a spark to love"</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div id="chi_siamo" class="content">
+            <div>
+                <h2 class="satisfy-regular">About Us</h2>
+                <p style="font-size: 18px; line-height: 1.7; color: black;">An establishment born in 1900 from a family with a passion for high-quality cuisine and ingredients, focusing on local culinary traditions. Originally a modest grocery store, it has evolved while maintaining its unique identity, offering products with a modern twist and a commitment to quality, professionalism, and personalized service. Through new methodologies, it strives to enhance efficiency and modernize processes while preserving its familiar atmosphere and selecting products that honor local traditions and the 'Made in Italy' label. Vino & Amore is a gourmet deli that promises a warm and welcoming atmosphere, thanks to its friendly and professional staff.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- Instagram images section with links -->
+        <div class="instagram-links">
+            <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                <img src="1.jpg" alt="Instagram Image 1">
+            </a>
+            <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                <img src="2.jpg" alt="Instagram Image 2">
+            </a>
+            <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                <img src="10.jpg" alt="Instagram Image 3">
+            </a>
+            <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                <img src="4.jpg" alt="Instagram Image 4">
+            </a>
+            <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                <img src="5.jpg" alt="Instagram Image 5">
+            </a>
+            <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                <img src="6.jpg" alt="Instagram Image 6">
+            </a>
+            <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                <img src="7.jpg" alt="Instagram Image 7">
+            </a>
+            <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                <img src="8.jpg" alt="Instagram Image 8">
+            </a>
+        </div>
+        <div id="contatti" class="content2">
+            <div>
+                <h2 class="satisfy-regular"><center>Info</center></h2>
+                <p><b>Address</b>: <a class="gold-link" href="https://www.google.com/maps/place/Vino+%26+Amore/@40.7858429,17.2335368,17z/data=!3m2!4b1!5s0x1347b2646c9b4f1d:0xbc21092f6ac81a71!4m6!3m5!1s0x1347b3c3a2b62a81:0x1a6a9f2880bef432!8m2!3d40.7858389!4d17.2361117!16s%2Fg%2F11ny2kkc40?authuser=0&entry=ttu" target="_blank"><span style="color: #754909;">Corso Vittorio Emanuele 76, 70011, Alberobello, Italy</span></a></p>
+                    <p><b>Phone</b>: <a class="gold-link" href="tel:+393392824311"><span style="color: #754909;">+39 3392824311</span></a></p>
+                    <p><b>Email</b>: <a class="gold-link" href="mailto:vinoeamore@gmail.com"><span style="color: #754909;">vinoeamore2021@gmail.com</span></a></p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="instagram-links">
+                <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                    <img src="9.jpg" alt="Instagram Image 9">
+                </a>
+                <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                    <img src="3.jpg" alt="Instagram Image 3">
+                </a>
+                <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                    <img src="11.jpg" alt="Instagram Image 11">
+                </a>
+                <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                    <img src="12.jpg" alt="Instagram Image 12">
+                </a>
+                <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                    <img src="13.jpg" alt="Instagram Image 13">
+                </a>
+                <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                    <img src="14.jpg" alt="Instagram Image 14">
+                </a>
+                <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                    <img src="15.jpg" alt="Instagram Image 15">
+                </a>
+                <a href="https://www.instagram.com/vinoeamore2021" target="_blank">
+                    <img src="16.jpg" alt="Instagram Image 16">
+                </a>
+            </div>
+            <div id="prenota" class="content2">
+                <div>
+                    <h2 class="satisfy-regular"><center>Book</center></h2>
+                    <p>Feel free to contact us for any inquiries!</p>
+                    <center><a href="tel:+393392824311" class="call-button">CALL</a></center>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Vino & Amore. All rights reserved.</p>
+            <a href="https://www.instagram.com/vinoeamore2021?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="instagram_icon.png" alt="Instagram" style="width: 30px; height: 30px; margin-top: 10px;">
+            </a>
+        </footer>
+        <script>
+            // JavaScript to change background after scrolling
+            window.addEventListener('scroll', function() {
+                const header = document.getElementById('main-header');
+                if (window.scrollY > 150) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        </script>
+    </body>
+    </html>
